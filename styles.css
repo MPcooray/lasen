@@ -274,16 +274,16 @@ button:focus-visible {
 }
 
 .hero-visual {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   min-height: 26rem;
 }
 
 .ghost {
-  position: absolute;
+  position: static;
   z-index: 0;
-  top: 0;
-  right: 0;
-  margin: 0;
+  margin: 0 0 0.55rem;
   color: transparent;
   font-family: var(--display);
   font-size: clamp(2rem, 3.6vw, 3.4rem);
@@ -300,7 +300,7 @@ button:focus-visible {
   position: relative;
   z-index: 1;
   width: min(100%, 440px);
-  margin: 2.4rem 0 0 auto;
+  margin: 0 0 0 auto;
   border: 1px solid var(--border);
   background: var(--card);
 }
@@ -710,9 +710,11 @@ button:focus-visible,
     height: 26rem;
   }
 
+  .hero-visual {
+    align-items: center;
+  }
+
   .ghost {
-    right: 50%;
-    transform: translateX(50%);
     font-size: 1.45rem;
   }
 }
