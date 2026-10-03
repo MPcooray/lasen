@@ -1,0 +1,31 @@
+---
+description: Visual design of Lasen's engineering portfolio. Keep this look on every page change.
+alwaysApply: true
+---
+
+# Portfolio design
+
+This is the approved look. Do not restyle it into the rejected versions: dark navy with brass/gold, or warm cream paper with a maroon double frame.
+
+## Palette
+
+- Page `#e7eef3`, panels `#f7fafb`, ink `#102033`, muted text `#526273`, rules `#c5d0da`
+- Teal `#0e3d42` for the mark, photo caption, buttons, and the contact band. Bright teal `#127e86` for small labels
+- Copper `#b8612d` only for section indexes, the university line, and focus rings
+- Body background is a faint 28px blueprint grid in `rgba(16, 32, 51, 0.045)`
+
+## Type
+
+- Headings: Barlow Condensed, bold, uppercase
+- Body: Barlow
+- Labels, kickers, and footer meta: IBM Plex Mono, uppercase, wide tracking
+
+## Layout
+
+- Full width. Side padding is `clamp(1rem, 2.2vw, 2rem)`. Do not center a narrow max-width column.
+- Sticky nav on the grid color. Teal square mark reads `LW`. Links: Profile, Education, Engineering, Contact.
+- Hero is one panel with a 1px border. Photo on the left (`object-position: center 18%`), teal caption bar, copy on the right. Credential row: Degree `BScEngHons`, Field `Electrical & Electronic`, Base `Ratmalana`.
+- Sections `01`–`04` open with a hairline and a copper index.
+- Education is a ruled record list on a panel. Engineering is a 2×2 spec grid. Contact is a teal band with light inputs and a light button.
+
+When editing, change copy or structure inside this system. Do not swap the palette, fonts, grid, or full-width layout unless the user explicitly asks for a new design.
