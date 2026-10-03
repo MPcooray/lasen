@@ -1,31 +1,31 @@
 ---
-description: Visual design of Lasen's engineering portfolio. Keep this look on every page change.
+description: Approved dark engineering blueprint theme for Lasen's portfolio.
 alwaysApply: true
 ---
 
 # Portfolio design
 
-This is the approved look. Do not restyle it into the rejected versions: dark navy with brass/gold, or warm cream paper with a maroon double frame.
+Two versions exist. Do not merge them into one file.
+
+- `index.html` + `styles.css` is the dark blueprint (`#0B1117`, teal `#28C7D9`, Space Grotesk / IBM Plex Sans).
+- `remembered.html` + `remembered.css` is the light engineering sheet the user asked to keep (`#e7eef3`, teal `#0e3d42`, copper `#b8612d`, Barlow Condensed, full width, photo on the left).
 
 ## Palette
 
-- Page `#e7eef3`, panels `#f7fafb`, ink `#102033`, muted text `#526273`, rules `#c5d0da`
-- Teal `#0e3d42` for the mark, photo caption, buttons, and the contact band. Bright teal `#127e86` for small labels
-- Copper `#b8612d` only for section indexes, the university line, and focus rings
-- Body background is a faint 28px blueprint grid in `rgba(16, 32, 51, 0.045)`
+- Background `#0B1117`, cards `#111A23`
+- Accent `#28C7D9` for indexes, the kicker, rules, and the main button only
+- Secondary accent `#4F8CFF` for timeline markers
+- Text `#F5F7FA`, muted `#8B98A5`, borders `#22303C`
+- Blueprint grid: 40px, teal at about 7% opacity. No neon glow, gradients, or maroon/gold
 
-## Type
+## Type and layout
 
-- Headings: Barlow Condensed, bold, uppercase
-- Body: Barlow
-- Labels, kickers, and footer meta: IBM Plex Mono, uppercase, wide tracking
+- Headings: Space Grotesk. Body: IBM Plex Sans. Labels: IBM Plex Mono, uppercase
+- Content width `min(1180px, calc(100% - clamp(2.2rem, 6vw, 6rem)))`, centered. The grid fills the viewport
+- Nav wordmark is `Lasen.` Links: About, Education, Engineering, Skills, Activities, Contact
+- Hero: name in white, “Engineering undergraduate” in teal, photo on the right with outlined `ENGINEER.` behind it
+- Engineering items are technical sheets (number, title, chips, filled icon), not generic cards
 
-## Layout
+## Facts
 
-- Full width. Side padding is `clamp(1rem, 2.2vw, 2rem)`. Do not center a narrow max-width column.
-- Sticky nav on the grid color. Teal square mark reads `LW`. Links: Profile, Education, Engineering, Contact.
-- Hero is one panel with a 1px border. Photo on the left (`object-position: center 18%`), teal caption bar, copy on the right. Credential row: Degree `BScEngHons`, Field `Electrical & Electronic`, Base `Ratmalana`.
-- Sections `01`–`04` open with a hairline and a copper index.
-- Education is a ruled record list on a panel. Engineering is a 2×2 spec grid. Contact is a teal band with light inputs and a light button.
-
-When editing, change copy or structure inside this system. Do not swap the palette, fonts, grid, or full-width layout unless the user explicitly asks for a new design.
+Do not invent projects, tools, awards, or dates. Keep: EEE at USJ, Ratmalana, Isipathana College Grade 1–11 with table tennis and cricket, Ananda College Grade 12 through A/Ls.
