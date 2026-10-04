@@ -5,10 +5,7 @@ alwaysApply: true
 
 # Portfolio design
 
-Two versions exist. Do not merge them into one file.
-
-- The Next.js app (`app/page.js`, `app/globals.css`) is the dark blueprint (`#0B1117`, teal `#28C7D9`, Space Grotesk / IBM Plex Sans).
-- `remembered.html` + `remembered.css` is the light engineering sheet the user asked to keep (`#e7eef3`, teal `#0e3d42`, copper `#b8612d`, Barlow Condensed, full width, photo on the left). It is also served from `public/remembered.html`. Do not merge the two designs.
+The Next.js app (`app/page.js`, `app/globals.css`) is the dark blueprint (`#0B1117`, teal `#28C7D9`, Space Grotesk / IBM Plex Sans).
 
 ## Palette
 

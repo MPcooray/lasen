@@ -221,9 +221,6 @@ export default function HomePage() {
       <footer className="site-footer">
         <p>© {year} Lasen Wikramawardena</p>
         <p>Electrical &amp; Electronic Engineering · University of Sri Jayewardenepura</p>
-        <p>
-          <a href="/remembered.html">Light engineering version</a>
-        </p>
       </footer>
     </>
   );
