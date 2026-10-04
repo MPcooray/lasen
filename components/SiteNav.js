@@ -53,11 +53,23 @@ export default function SiteNav() {
   }, []);
 
   useEffect(() => {
+    document.body.classList.toggle("nav-open", open);
+    return () => document.body.classList.remove("nav-open");
+  }, [open]);
+
+  useEffect(() => {
     const onKey = (event) => {
       if (event.key === "Escape") setOpen(false);
     };
+    const onResize = () => {
+      if (window.innerWidth >= 860) setOpen(false);
+    };
     document.addEventListener("keydown", onKey);
-    return () => document.removeEventListener("keydown", onKey);
+    window.addEventListener("resize", onResize);
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      window.removeEventListener("resize", onResize);
+    };
   }, []);
 
   return (
@@ -73,6 +85,7 @@ export default function SiteNav() {
         onClick={() => setOpen((value) => !value)}
       >
         <span className="sr-only">{open ? "Close menu" : "Open menu"}</span>
+        <span></span>
         <span></span>
         <span></span>
       </button>
