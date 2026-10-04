@@ -1,7 +1,5 @@
 import ContactPanel from "../components/ContactPanel";
 import EngineeringBench from "../components/EngineeringBench";
-import ProbeCursor from "../components/ProbeCursor";
-import Readout from "../components/Readout";
 import SiteNav from "../components/SiteNav";
 
 export default function HomePage() {
@@ -13,8 +11,6 @@ export default function HomePage() {
         Skip to content
       </a>
       <SiteNav />
-      <ProbeCursor />
-      <Readout />
 
       <main id="top">
         <section className="hero">
@@ -33,7 +29,7 @@ export default function HomePage() {
             <p className="lede">Engineering ideas into practical solutions.</p>
             <div className="hero-actions">
               <a className="button" href="#engineering">
-                View work
+                Engineering
               </a>
               <a className="text-link" href="#contact">
                 Contact

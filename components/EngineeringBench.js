@@ -70,13 +70,9 @@ const sheets = [
 
 export default function EngineeringBench() {
   const [active, setActive] = useState(0);
-  const current = sheets[active];
 
   return (
     <>
-      <p className="bench-status">
-        On the bench · Sheet {current.no} · {current.title}
-      </p>
       <div className="sheets">
         {sheets.map((sheet, index) => (
           <button
